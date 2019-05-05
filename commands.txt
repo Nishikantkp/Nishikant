@@ -1,0 +1,147 @@
+HOME@DESKTOP-BMIND6L MINGW64 ~
+$ cd ~/desktop
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop
+$ git clone https://github.com/Nishikantkp/Nishikant.git
+Cloning into 'Nishikant'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 18 (delta 3), reused 18 (delta 3), pack-reused 0
+Unpacking objects: 100% (18/18), done.
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop
+$ cd Nishikant.git
+bash: cd: Nishikant.git: No such file or directory
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop
+$ cd Nishikant
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (master)
+$ git branch array
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (master)
+$ git checkout array
+Switched to branch 'array'
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ touch reverse_of_array
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git status
+On branch array
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        reverse_of_array
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git delete reverse_of_array
+git: 'delete' is not a git command. See 'git --help'.
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git status
+On branch array
+nothing to commit, working tree clean
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ touch reverse_of_array.c
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git status
+On branch array
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        reverse_of_array.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git add .
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git commit -m 'added an array reverse program'
+[array f7d45ce] added an array reverse program
+ 1 file changed, 27 insertions(+)
+ create mode 100644 reverse_of_array.c
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (master)
+$ git merge array
+Updating feb5666..f7d45ce
+Fast-forward
+ reverse_of_array.c | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+ create mode 100644 reverse_of_array.c
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 505 bytes | 101.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Nishikantkp/Nishikant.git
+   feb5666..f7d45ce  master -> master
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (master)
+$ git branch arrsy
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (master)
+$ git checkout array
+Switched to branch 'array'
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ touch reversearray.Nishikant.c
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git status
+On branch array
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    reverse_of_array.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        reversearray.Nishikant.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git add .
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git commit -m
+error: switch `m' requires a value
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git commit -m 'added reverse of array program'
+[array 52a0a1e] added reverse of array program
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename reverse_of_array.c => reversearray.Nishikant.c (100%)
+
+HOME@DESKTOP-BMIND6L MINGW64 ~/desktop/Nishikant (array)
+$ git push origin array
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 774 bytes | 387.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'array' on GitHub by visiting:
+remote:      https://github.com/Nishikantkp/Nishikant/pull/new/array
+remote:
+To https://github.com/Nishikantkp/Nishikant.git
+ * [new branch]      array -> array
