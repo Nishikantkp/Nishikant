@@ -1,27 +1,27 @@
 #include<stdio.h>
 void main()
 {
-	int n,i,j;
+	int size,index1,index2;
 	int arr[20];
 	int temp[20];
 	printf("Enter the size of the array: ");
-	scanf("%d",&n);
+	scanf("%d",&size);
 	printf("Enter %d elements into array:\n",n);
-	for(int i=0;i<n;i++)
+	for(int index1=0;index1<size;index1++)
 	{
 		scanf("%d",&arr[i]);
 	}
-	for(i=n-1,j=0;i>=0,j<n;i--,j++)
+	for(index1=size-1,j=0;index1>=0,j<n;index1--,j++)
 	{
-		temp[j]=arr[i];
+		temp[index2]=arr[index1];
 	}
-	for(int i=0;i<n;i++)
+	for(int index1=0;index1<size;i++)
 	{
-		arr[i]=temp[i];
+		arr[index1]=temp[index1];
 	}
-	for(int i=0;i<n;i++)
+	for(int index1=0;index1<size;index1++)
 	{
-		printf("%d\t",arr[i]);
+		printf("%d\t",arr[index1]);
 	}
 	
 }
