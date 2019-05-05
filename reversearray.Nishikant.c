@@ -1,27 +1,26 @@
 #include<stdio.h>
 void main()
 {
-	int size,index1,index2;
+	int size,index1,lastindex,temp;
 	int arr[20];
-	int temp[20];
 	printf("Enter the size of the array: ");
 	scanf("%d",&size);
-	printf("Enter %d elements into array:\n",n);
+	lastindex=size-1;
+	printf("Enter %d elements into array:\n",size);
 	for(int index1=0;index1<size;index1++)
 	{
-		scanf("%d",&arr[i]);
+		scanf("%d",&arr[index1]);
 	}
-	for(index1=size-1,j=0;index1>=0,j<n;index1--,j++)
+	for (index1=0;index1<size/2;index1++)
 	{
-		temp[index2]=arr[index1];
+		temp=arr[index1];
+		arr[index1]=arr[lastindex];
+		arr[lastindex]=temp;
+		lastindex--;
 	}
-	for(int index1=0;index1<size;i++)
-	{
-		arr[index1]=temp[index1];
-	}
+	printf("After reversing:\n");
 	for(int index1=0;index1<size;index1++)
 	{
 		printf("%d\t",arr[index1]);
 	}
-	
 }
