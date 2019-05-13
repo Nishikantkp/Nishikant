@@ -39,14 +39,14 @@ int nthFibonacci(int n)
 }
 
 int nthPrime(int num)
-
 {
 	if (num > 0)
 	{
 		int num1 = 2, count = 1, flag;
+		if (num == 1)
+			return num1;
 		while (1)
 		{
-
 
 			for (int index = 2; index < num1; index++)
 			{
@@ -61,7 +61,6 @@ int nthPrime(int num)
 			if (count == num)
 				return num1;
 			num1++;
-
 		}
 	}
 	return -1;

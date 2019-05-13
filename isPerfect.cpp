@@ -39,7 +39,6 @@ void isPerfect(long input[], int output[], int length)
 					sum = sum + index;
 			}
 		}
-
 		if (sum == num)
 		{
 
